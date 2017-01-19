@@ -1,0 +1,159 @@
+/* -------------- RESET CSS ----------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* -------------- FIN RESET CSS ----------------*/
+body {
+    font-family: arial, sans-serif;
+}
+
+#content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left:0;
+    background: rgba(85,85,85,0.5);
+    visibility: hidden;
+}
+
+nav {
+    width: 100%;
+    background-color: #00B9B3;
+    margin-bottom: 8%;
+}
+
+ul {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+a:hover {
+        background-color: #008A86;
+}
+
+section {
+    width: 50%;
+    margin: auto;
+    text-align: justify;
+}
+
+#newsletter {
+    display: block;
+    width: 400px;
+    height: 267px;
+    border-radius: 20px;
+    background-image: url(oiseau.jpg);
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    text-align: center;
+    visibility: hidden;
+    min-width: 200px;
+}
+
+form div {
+    width: 100%;
+    margin-top: 30%;
+}
+
+form h2 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+#required{
+    font-size: 13px;
+    color: firebrick;
+    visibility: hidden;
+}
+
+#cross{
+    display: block;
+    width: 20px;
+    height: 20px;
+    float: right;
+    border-radius: 20px;
+    font-size: 20px;
+    
+}
+
+#reset{
+    position: absolute;
+    right: 13px;
+    bottom: 70px;
+}
+
+@media all and (max-width: 1024px){
+    ul {
+    flex-direction: column;
+    text-align: center;
+    }
+    
+    a {
+        width: 100%;
+    }
+    form {
+    top: 30%;
+    left: 30%;
+    }
+
+}
+@media all and (max-width: 768px){
+    form {
+    top: 20%;
+    left: 20%;
+    }
+
+}

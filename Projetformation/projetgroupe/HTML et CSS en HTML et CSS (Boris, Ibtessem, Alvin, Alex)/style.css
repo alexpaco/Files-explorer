@@ -1,0 +1,327 @@
+
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	background-image:url(fond.png);
+    padding: 0;
+	margin: 0;
+}
+
+/*-----------------------------------------------------------------------------------------CODAGE COMMUN A TOUTES LES PAGES HTML---------------------------------------------------------------*/
+
+/*---------------BARRE DE NAVIGATION-------------------*/
+
+.body {
+	height: 2000px;
+}
+
+
+nav {
+	background-color:black;
+	line-height: 50px;
+	margin-bottom: -16px;
+    margin-top: 0px;
+    color:white;
+	width: 100%;
+	overflow-y: visible;
+	border-bottom: 3px solid white;
+	box-shadow: 3px 3px 3px green;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin-left: 30%;
+}
+
+nav li {
+	padding: 0px;
+	display: inline-block;
+}
+
+nav a {
+	padding: 15px;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+}
+	
+nav a:hover {
+	color: #7CFE54;
+	}
+
+nav img {
+    width: 70px;
+    height: 50px;
+    float: left;
+    padding-left: 10px;
+}
+
+/*----------------------FOOTER (PIED DE PAGE)-------------*/
+
+
+.footer {
+	background-color: black;
+	width: 100%;
+	line-height: 50px;
+	margin-bottom: -30px;
+	margin-top: 0px;
+	border-top: 2px solid white;
+}
+
+.footer table {
+	border: none;
+	padding: 0px;
+	margin-left: 33%;
+	margin-top: 0%;
+	margin-bottom: 0px;
+	text-align: center;
+	width: 600px;
+}
+
+.footer table th {
+	border-bottom: 1px solid white;
+	border-radius: 3px;
+	margin-bottom: 0px;
+}
+
+.footer table tr {
+	color: white;
+
+}
+	
+.footer img {
+    width: 150px;
+    height: 100px;
+    float: left;
+    padding-left: 10px;
+	margin-top: 100px;
+}
+
+/*MENU DEROULANT DU FOOTER*/ 
+
+#menu {
+	margin-bottom: 190px;
+}
+
+#menu ul {
+	text-align: center;
+	line-height: 30px;
+	padding: 0px;
+	margin-left: 38%;
+	margin-top: 60px;
+}
+
+
+#menu li {
+	list-style: none;
+	position: relative;
+}
+
+#menu ul li a {
+	padding: 0px;
+	text-decoration: none;
+	color: #052F00;
+	display: block;
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 450px;
+}
+
+#menu ul ul {
+	visibility: hidden;
+	margin-left: 0px;
+	margin-top: 0px;
+}
+
+#menu ul li:hover ul {
+	visibility: visible;
+}
+
+#menu ul li a {
+	background-color: white;
+}
+
+#menu ul li a:hover {
+	background-color: green;
+	color: black;
+}
+
+
+/*------------------------------AUTRE------------------------*/
+
+h1 {
+	text-align: center;
+	text-shadow: 2px 2px 2px green;
+	color: white;
+	margin-top: 35px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+.bordure {
+	border: 2px solid black;
+	border-radius: 3px;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px;
+	background-color: rgba(255,255,255,0.9);
+	box-shadow: 3px 3px 2px green;
+	text-align: justify;
+}
+
+/*----------------------------------------------------------------------------FIN DE DU CODE COMMUN----------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------ACCUEIL (page1)-------------------------------------------------*/
+
+#logo {
+	border: 3px solid black;
+	border-radius: 25px;
+	box-shadow: 2px 2px 2px 2px green;
+	background-color: white;
+	margin: auto;
+	width:40%;
+	margin-top: 20%px;
+	opacity: 0.95;
+	margin-bottom:14%;
+	}
+
+#logo img {
+	margin-left: 28%;
+}
+
+
+
+/*--------------------------------------------------------------------------------------COURS HTML (page 2)--------------------------------------------------------------------*/
+
+.p1 {
+	color: white;
+}
+
+.commentaires {
+  color: #AED4A8;    
+}
+
+.balises {
+	color: #C06FFE;
+}
+
+.contenu {
+    color: white;
+}
+
+.vert {
+    color: #859615;
+}
+
+.orange {
+    
+color: #D87624;
+}
+
+#p2 {
+	margin-left: 30px;
+}
+
+#p3 {
+	margin-left: 60px;
+}
+
+.p4 {
+	margin-left: 90px;
+}
+
+#p5 {
+	margin-left: 60px;
+}
+
+#p6 { 
+	margin-left: 60px;
+}
+
+#p7 {
+	margin-left: 60px;
+}
+
+#p8 {
+	margin-left: 30px;
+}
+
+#p10 {
+	margin-left: 30px;
+}
+
+#p11 {
+	margin-left: 30px;
+}
+
+.blagues {
+    text-decoration: line-through;
+}
+
+aside {
+    background-color: #1D1F21;
+    padding:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+
+
+
+/*---------------------------------------------------------------------BALISES HTML (page3)-----------------------------------------------------------*/
+
+.capture {
+	width: 100%;
+	padding: 10px;
+}
+
+
+
+
+/*-------------------------------------------------------------------------COURS CSS (page4)-------------------------------------------------------------------*/
+
+#imgcss {
+	margin-left: 320px;
+}
+
+.bold{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.line{
+    text-decoration: underline;
+}
+
+.vert{
+    color: red;
+}
+
+.img4 {
+	width: 100%;
+}
+/*------------------------------bouton--------------------*/
+
+button {
+    background-color: #1D1F21;
+    color: white;
+    border-radius: 10px;
+}
+
+button:hover{
+    color: #AED4A8;
+    background-color: red;
+}
+
+

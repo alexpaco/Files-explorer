@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Animation JS</title>
+        <style>
+            
+            section{
+                background-color: darkgrey;
+                height: 500px;
+                width: 500px;
+                position: relative;
+            }
+
+
+            #cadre{
+                position: absolute;
+                height: 50px;
+                width: 25px;
+                background-image: url(link.png);
+}
+        </style> 
+    </head>
+
+    <body onload="init()">
+        <section>
+            <div id="cadre"></div>
+        </section>
+    
+        <script type="text/javascript">
+            function init(){
+                cadre.style.left = 0+"px";
+                cadre.style.top = 0+"px";
+            }
+        var finAnim = true;
+        var image = true;    
+        var cadre = document.getElementById("cadre");
+        window.addEventListener("keydown",function(e) {
+           jeu(e); 
+        });
+          
+        
+    function jeu(event){
+        var positiongauche = parseFloat(cadre.style.left.replace("px","")); 
+        var positionhaut = parseFloat(cadre.style.top.replace("px",""));
+        var keyCode = event.keyCode;
+        var link = 0;
+        
+            if(keyCode === 39){
+                if(finAnim == true){var interval = setInterval(function(){
+                    if(positiongauche <=465){
+                        finAnim = false;
+                if(link == 25){
+                    clearInterval(interval);
+                    finAnim = true;
+                }
+                else{
+                    link++;
+                    cadre.style.left = (link)+(positiongauche)+ "px";
+                }
+                    }
+                },10)};
+                
+               if(image === true){
+                    cadre.style.backgroundImage = "url(linkdroit.png)";
+                    image = false;
+                }
+                
+               else if(image === false){
+                    cadre.style.backgroundImage = "url(linkdroit2.png)";
+                    image = true;
+                }
+//                console.log(link);
+//                console.log(image);
+                console.log(positiongauche);
+                console.log(finAnim);
+            }
+            
+            if(keyCode === 40){
+                 if(finAnim == true){var interval = setInterval(function(){
+                    if(positionhaut <=445){
+                        finAnim = false;
+                if(link == 50){
+                    clearInterval(interval);
+                    finAnim = true;
+                }
+                else{
+                    link++;
+                    cadre.style.top = link + positionhaut+ "px";
+                }
+                    }
+                },10)};
+                
+                if(image === true){
+                    cadre.style.backgroundImage = "url(linkavance.png)";
+                    image = false;
+                }
+                
+               else if(image === false){
+                    cadre.style.backgroundImage = "url(linkavance2.png)";
+                    image = true;
+                }
+                console.log(image);
+                console.log(positionhaut);
+                console.log(finAnim);
+            }
+        
+            if(keyCode === 37){
+                 if(finAnim == true){var interval = setInterval(function(){
+                    if(positiongauche >=10){
+                        finAnim = false;
+                if(link == 50){
+                    clearInterval(interval);
+                    finAnim = true;
+                }
+                else{
+                    link++;
+                    cadre.style.left = positiongauche - link + "px";
+                }
+                    }
+                },10)};
+                
+                 if(image === true){
+                    cadre.style.backgroundImage = "url(linkgauche.png)";
+                    image = false;
+                }
+                
+               else if(image === false){
+                    cadre.style.backgroundImage = "url(linkgauche2.png)";
+                    image = true;
+                }
+                console.log(image);
+                console.log(positiongauche);
+                console.log(finAnim);
+            }
+            
+            if(keyCode === 38){
+               if(finAnim == true){var interval = setInterval(function(){
+                    if(positionhaut >=10){
+                        finAnim = false;
+                if(link == 25){
+                    clearInterval(interval);
+                    finAnim = true;
+                }
+                else{
+                    link++;
+                    cadre.style.top =  positionhaut - link + "px";
+                }
+                    }
+                },10)};
+                
+                 if(image === true){
+                    cadre.style.backgroundImage = "url(linkdos.png)";
+                    image = false;
+                }
+                
+               else if(image === false){
+                    cadre.style.backgroundImage = "url(linkdos2.png)";
+                    image = true;
+                }
+                console.log(image);
+                console.log(positionhaut);
+                console.log(finAnim);
+            } 
+         
+        if(keyCode === 32){
+            cadre.style.top = (positionhaut + -25)+"px";
+            cadre.style.left = (positiongauche + 25)+"px";
+            cadre.style.top = (positionhaut + 25)+"px";   
+        }
+    } 
+            
+        </script>    
+    </body>
+</html>

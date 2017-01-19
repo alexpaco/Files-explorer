@@ -1,0 +1,79 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.tout{
+	background: linear-gradient(to bottom right, #034f84 0%, #40E0D0 100%);
+	width: 50%;
+	height: 500px;
+	margin-left: 25%;
+	border:2px solid #034f84;
+}
+
+header{
+	background-color: #034f84;
+	width: 100%;
+	height: 50px;
+	display: flex;
+
+
+}
+
+.prec{
+	font-size: 30px;
+	width: 2%;
+	margin-left: 1%;
+	margin-top: 1%;
+	color: #40E0D0;
+
+}
+
+.suiv{
+	font-size: 30px;
+	width: 2%;
+	margin-left: 4%;
+	margin-top: 1%;
+	color: #40E0D0;
+}
+
+.lien{
+	text-decoration: none;
+	color: red;
+}
+
+.debut{
+	margin-top: 2%;
+	margin-left: 10%;
+	height: 20px;
+	background-color: white;
+}
+
+.filariane{
+	margin-top: 2%;
+	margin-left: 0.5%;
+	height: 20px;
+	background-color: white;
+	
+
+}
+
+.navigateur{
+	display: flex;
+}
+
+.listeverticale{
+	width: 25%;
+	height: 450px;
+	border-right: 2px solid #034f84;
+	background-color: white;
+}
+
+.fichier{
+	margin-left: 5%;
+}
+
+.dossiers{
+	text-decoration: none;
+	color: white;
+}

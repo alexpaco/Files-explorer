@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html> <!-- test -->
+	<head>
+		<title>HTML ? C'est quoi ça ?!</title>
+        <link rel="stylesheet" type="text/css" href="styled.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="utf-8">
+	</head>
+	
+	<body>
+		<header>
+			<nav>
+				<img src="elansCodeurs2.png" alt="logo élan HTML" />
+					<ul>
+						<li><a href="accueil.html" title="La page qui ne sert à rien... (avant elle donnait la date et l'heure en Javascript)">&ltAccueil&gt </a></li>
+						<li><a href="courshtml.html" title="Où vous apprendrez des trucs trop cool ! (ou pas...)"><FONT COLOR="green">HTML ? C'est quoi ça ?!</FONT></a></li>
+						<li><a href="baliseshtml.html">Balisons!</a></li>
+						<li><a href="courscss.html" title="Une cascade d'infos pour rendre vos pages trop belles !">Et le CSS ?</a></li>
+						<li><a href="liens.html" title="Si, si, je vous assure ! ;)">Liens (utiles)</a></li>
+					</ul>
+			</nav>
+		</header>
+		
+	<h1>HTML ? C'est quoi ça ?!</h1>
+	
+<section id="barre">
+
+	<article class="bordure">
+	
+	<h2>Squelette d'une page HTML</h2>
+
+	<p>Toutes les pages codées en HTML ont le même squelette, la même structure de base. Ça ressemble à ça :</p>
+	
+    
+    <button type="button" onclick="test()"><a onclick="javascript:transformer(this);">Code CSS</a></button>
+
+    <aside id="test1">
+        <p class="p1">&lt!DOCTYPE html&gt <span class="commentaires">&lt!--Tout document HTML commence avec cette balise et c’est tout le temps le cas --&gt</span> </p>
+        <p id="p2">	<span class="balises">&lthtml&gt</span><span class="commentaires">&lt!--Cette balise nous indique que nous utilison le langage HTML--&gt</span> </p>
+        <p id="p3">			<span class="balises">&lthead&gt</span> <span class="commentaires">&lt!--contient l'entête du document html, c'est à dire toutes les informations
+		non visibles par l'internaute. --&gt</span> 
+		</p>
+        <p class="p4"><span class="balises">&ltmeta</span> <span class="vert">charset</span><span class="p1">=</span><span class="orange">"utf-8"</span><span class="balises">&gt</span>
+        <p class="p4">				<span class="balises">&lttitle&gt</span><span class="contenu">Titre</span><span class="balises">&lt/title&gt</span> <span class="commentaires">&lt!--Titre qui
+		apparaît dans l’onglet de notre page--&gt</span>
+		</p>
+        <p id="p5">			<span class="balises">&lt/head&gt></p>
+        <p id="p6">			<span class="balises">&ltbody&gt</span> </span>
+        <p class="p4"><span class="commentaires">&lt!--Contenu de notre page (corps), visible par touts visiteurs--&gt</span> </p>
+        <p id="p7">			<span class="balises">&lt/body&gt</span> </p>
+        <p id="p8"><span class="balises">&lt/html&gt</span> </p>
+    </aside>
+	
+    <p>Vous êtes perdu ? Rien de bien grave, on va vous expliquer tout ça !</p>
+	</article>
+    
+	<article class="bordure">
+	
+    <h2>F.A.Q.</h2>
+	
+    <h2>Ça sert à quoi ce truc ?</h2>
+	<p>How to meet ladies ? Le HTML sert <span class="blagues">à rencontrer des dames</span> à produire des pages Web. C'est-à-dire ? Le HTML sert à dire à un navigateur <bold>ce</bold> qu'il doit afficher ! Mais pas comment l'afficher... ça, c'est le rôle du CSS.<br /><br /></p>
+		
+    <h2>HTML, ça veut dire quoi ?</h2>
+    <p>HTML est l’abréviation de <strong> HyperText Markup Language</strong>, soit en français « langage de balisage hypertexte ».<br /><br /></p>
+    
+    <h2>Mais ça vient d'où ?</h2>
+    <p>Ce langage a été créé en 1991 lors du lancement du Web par Tim Berners Lee, fondateur de la W3C (world wide web consortium: organisme de standardisation des règles du web). <br /><br /></p>
+    
+    <h2>Je connais le HTML, je suis un programmeur !</h2>
+    <p>Euh... ce n'est pas si simple ! Un langage de programmation définit une manière de donner des ordres à un ordinateur (obéit, serviteur !). Le HTML  est plutôt un langage d'affichage, de représentation.<br /><br /></p>
+
+    <h2>Mais comment ça fonctionne ?</h2>
+    <p>Le HTML utilise des balises pour encadrer les contenus qui s'afficheront pour le visiteur. Une balise ? Et oui, comme quand un accident de la route se produit et qu'on le signale aux autres usagers de la route par des balises qui encadrent la zone, des plots qui disent où commence la zone à risque et où elle s'arrête. De la même façon, le contenu d'une page Web est encadré par les balises HTML.<br /><br /></p>
+        
+    <h2>Une balise, ça ressemble à quoi ?</h2>
+	<p>Les balises sont composées de "chevrons", ce sont ces trucs là : "&lt" et "&gt". Ils servent à encadrer le nom de la balise. Il y a deux types de balise, les balises ouvrantes et les balises fermantes :</p>
+    <ul>
+		<li>balise de paragraphe ouvrante : &ltp&gt </li>
+		<li>balise de paragraphe fermante: &lt/p&gt </li>
+	</ul>
+	<p>Évidemment, chaque balise ouvrante <b>doit</b> se fermer ! Sinon c'est pas propre... Concrètement, si on veut écrire un paragraphe, on ouvre la balise qui désigne un paragraphe, on tape notre texte et on referme la balise. De cette manière, le contenu qui se trouve entre nos balise de paragraphe (ouvrante et fermante) sera reconnu en tant que paragraphe par le navigateur.<br /><br /></p>
+	
+    <h2>Et sinon, à part ça...</h2>
+    
+	<p>Imaginons que vous ayez l'idée saugrenue de faire une page Web qui explique comment faire des pages Web (hum-hum) et que vous ayez donc besoin de faire apparaître des balises HTML. Essayez, c'est assez drôle ! Votre navigateur les interprêtes au lieu de les afficher ? Nous avons eu le même problème... La solution ? Débrouillez-vous par vous même pour la trouver ! Sachez juste que.... c'est possible ! ;)<br /><br /></p>
+</article>
+	
+
+</section>
+
+<div class="footer">
+	<footer>
+		<img src="elansCodeurs2.png" alt="logo élan HTML" />
+		<table>
+			<tr><th>Contactez nous pour plus d'infos :</th>
+			<tr><td>alva220495@gmail.com</td></tr>
+			<tr><td>mirrouwicko@gmail.com</td></tr>
+			<tr><td>boris.brabant@gmail.com</td></tr>
+			<tr><td>alexendre.ulrich@gmail.com</td></tr>
+		</table>
+	</footer>
+</div>
+    
+    <script type="text/javascript">
+    
+ 
+        
+    var condition = true;
+    
+    function test(){
+        if(condition == true){
+            document.getElementById("test1").innerHTML = '<img src = "CaptureCSS.PNG"/>';
+            condition = false;
+        }
+        else{
+            document.getElementById("test1").innerHTML = '<p class="p1">&lt!DOCTYPE html&gt <span class="commentaires">&lt!--Tout document HTML commence avec cette balise et c\’est tout le temps le cas --&gt</span> </p><p id="p2"><span class="balises">&lthtml&gt</span><span class="commentaires">&lt!--Cette balise nous indique que nous utilison le langage HTML--&gt</span> </p><p id="p3"><span class="balises">&lthead&gt</span> <span class="commentaires">&lt!--contient l\'entête du document html, c\'est à dire toutes les informationsnon visibles par l\'internaute. --&gt</span> </p><p class="p4"><span class="balises">&ltmeta</span> <span class="vert">charset</span><span class="p1">=</span><span class="orange">"utf-8"</span><span class="balises">&gt</span><p class="p4"><span class="balises">&lttitle&gt</span><span class="contenu">Titre</span><span class="balises">&lt/title&gt</span> <span class="commentaires">&lt!--Titre qui apparaît dans l\’onglet de notre page--&gt</span></p><p id="p5"><span class="balises">&lt/head&gt></p><p id="p6"><span class="balises">&ltbody&gt</span> </span><p class="p4"><span class="commentaires">&lt!--Contenu de notre page (corps), visible par touts visiteurs--&gt</span> </p><p id="p7"><span class="balises">&lt/body&gt</span> </p><p id="p8"><span class="balises">&lt/html&gt</span> </p>';
+            condition = true;
+        }
+    }
+       
+        
+        function transformer(obj){
+		var texte = obj.innerHTML;
+		if (texte=="Code CSS") {
+			obj.innerHTML = "Code HTML";
+		}
+		else {
+			obj.innerHTML = "Code CSS";
+		}
+
+    }
+    </script>
+	</body>
+</html>

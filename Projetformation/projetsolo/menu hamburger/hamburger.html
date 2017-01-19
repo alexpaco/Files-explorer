@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Menu hamburger</title>
+        <link rel="stylesheet" href="hamburgercss.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+    
+    <!-- PopUp-->
+    
+         <body onload="window.location.href = '#openModal';">
+<a href="#openModal"></a>
+<div id="openModal" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Inscrivez-vous à notre newsletter</h2>
+<center>     
+<form>
+    Email :<input type="email" name="email" value="" placeholder="Entrer votre adresse mail">
+    <input type="submit" name="submit" value="Envoyer">
+    
+    </form>
+        </center>
+    </div>
+</div>
+            </div>
+        </body>
+
+    <!--Menu-->
+    
+    <body>
+        <div id="hamburger1" class="h1" >&#9776</div>
+        
+        <nav id="menu">
+            <ul class= "l1" id= "liste">
+                <li><a href="hamburger.html">Accueil</a></li>
+                <li><a href="hamburger.html">HTML ? C'est quoi ?</a></li>
+                <li><a href="hamburger.html">Balisons !</a></li>
+                <li><a href="hamburger.html">Et le CSS ?</a></li>
+                <li><a href="hamburger.html">Liens (utiles)</a></li>       
+            </ul>
+        </nav>
+        
+       
+        <script type="text/javascript">  
+            
+        /*-------------------Menu---------------*/    
+                       
+        var hamburger = document.getElementById("hamburger1");
+        var menu = document.getElementById("liste");
+            
+       
+        hamburger.onclick = function(){
+            
+            if(hamburger.className === "h1"){
+                hamburger.innerHTML = "X";
+                hamburger.className = "h2";
+                menu.className = "visible";
+            }
+            else{
+                hamburger.innerHTML = "&#9776";
+                hamburger.className = "h1";
+                menu.className = "l1"
+                
+            }
+        }
+        window.addEventListener ("resize", function() {
+            
+            if(document.documentElement.clientWidth > 520){
+                hamburger.style.cssText = "";
+                menu.style.cssText = "";
+            }
+        }, true);         
+                       
+        </script>
+    </body>
+</html>

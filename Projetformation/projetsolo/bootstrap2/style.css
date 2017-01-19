@@ -1,0 +1,201 @@
+#ligne1{
+    background-color: #38bcd3;
+    height: 100px;
+}
+
+#img1{
+    width: 120px;
+    height: 100px;
+}
+
+.ecriture{
+    font-size: 20px; 
+    padding-top: 40px;
+    color: white;
+}
+
+.ecriture1{
+    color: white;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 4px;
+}
+
+.ecriture2{
+    font-size: 12px;
+    margin-top: 2px;
+    text-align: left;
+}
+
+div{
+    border-bottom: 5px black solid;
+}
+
+.sec1{
+    padding: 0;
+}
+
+#trophee{
+    background-color: #f5f5f5;
+}
+
+#masque{
+    background-color: #fa8a7f;
+}
+
+#balle{
+    background-color: #b484fe;
+}
+
+#assiete{
+    background-color: #b7f6c9;
+}
+
+#livre{
+    background-color: #fbff86;
+}
+
+#os{
+    background-color: #7efeff;
+}
+
+.bandeau{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+    
+}
+
+#b1{
+    background-color: #999999;
+}
+
+#b2{
+    background-color: #f8504d;
+}
+
+#b3{
+    background-color: #7f53c6;
+}
+
+#b4{
+  background-color: #35eab5;  
+}
+
+#b5{
+   background-color: #fbed1a; 
+}
+
+#b7{
+    background-color: #3ea8f6;
+}
+
+.grand{
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 100%;
+    height: 0;
+}
+
+.moyen{
+    text-align: center;
+    padding: 0;
+    padding-bottom: 100%;
+    height: 0;
+}
+
+.petit{
+    text-align: center;
+    padding: 0;
+    padding-bottom: 100%;
+    height: 0;
+}
+
+div img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@media screen and (min-width:767px) { /* sm md lg */ 
+
+    .petit{
+        padding-bottom: 50%;
+    }
+    
+    .moyen{
+        padding-bottom: 50%;
+    }
+}
+
+@media screen and (min-width:991px) { /* md lg */
+    
+    .grand{
+        padding-bottom: 101.4%;
+    }
+
+    .moyen{
+        padding-bottom: 50%;
+        border: 5px black solid;
+        
+    }
+
+    .petit{
+        padding-bottom: 50%;
+    }
+    
+    .grand1{
+        border: 5px black solid;
+    }
+
+    .grand2{
+        border-bottom: 5px black solid;
+    }
+    
+    .petit1{
+        border-top: 5px black solid;
+        border-left: 5px black solid;
+    }
+
+    .petit2{
+        border-top: 5px black solid;
+    }
+
+    .petit3{
+        border-bottom: 5px black solid;
+        border-right: 5px black solid;
+        border-left: 5px black solid;
+    }
+    
+    .petit4{
+        border-bottom: 5px black solid;
+        border-left: 5px black solid;
+    }
+
+    .petit5{
+        border-right: 5px black solid;
+        border-bottom: 5px black solid;
+        border-left: 5px black solid;
+    }
+
+    .petit6{
+        border-left: 5px black solid;
+        border-bottom: 5px black solid;
+    }
+
+    .petit7{
+        border-bottom: 5px black solid;
+        border-left: 5px black solid;
+        border-right: 5px black solid;
+        
+    }
+    
+    .petit8{
+        border-bottom: 5px black solid;
+        border-left: 5px black solid;
+        
+    }
+}
