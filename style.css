@@ -6,7 +6,7 @@ body{
 .tout{
 	background: linear-gradient(to bottom right, #034f84 0%, #40E0D0 100%);
 	width: 50%;
-	height: 500px;
+	height: 700px;
 	margin-left: 25%;
 	border:2px solid #034f84;
 }
@@ -14,7 +14,7 @@ body{
 header{
 	background-color: #034f84;
 	width: 100%;
-	height: 50px;
+	height: 60px;
 	display: flex;
 
 
@@ -29,14 +29,6 @@ header{
 
 }
 
-.suiv{
-	font-size: 30px;
-	width: 2%;
-	margin-left: 4%;
-	margin-top: 1%;
-	color: #40E0D0;
-}
-
 .lien{
 	text-decoration: none;
 	color: red;
@@ -44,13 +36,14 @@ header{
 
 .debut{
 	margin-top: 2%;
-	margin-left: 10%;
+	margin-left: 5%;
 	height: 20px;
 	background-color: white;
 }
 
 .filariane{
 	margin-top: 2%;
+	width: 80%;
 	margin-left: 0.5%;
 	height: 20px;
 	background-color: white;
@@ -58,22 +51,29 @@ header{
 
 }
 
-.navigateur{
-	display: flex;
-}
-
-.listeverticale{
-	width: 25%;
-	height: 450px;
-	border-right: 2px solid #034f84;
-	background-color: white;
-}
-
 .fichier{
-	margin-left: 5%;
+	width: 100%;
+	height: 640px;
+	overflow: scroll;
 }
 
 .dossiers{
 	text-decoration: none;
 	color: white;
+}
+
+.image{
+	color: brown;
+}
+
+.jaune{
+	color: yellow;
+}
+
+.orange{
+	color: orange;
+}
+
+.css{
+	color: red;
 }
