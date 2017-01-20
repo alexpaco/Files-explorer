@@ -24,9 +24,8 @@
 		$separe = array_filter($separe);
 		$tab2 = $separe;
 		$vide = '';
-		$retour = array_pop($tab2);
+		$retour = array_pop($tab2); 
 		$implode = implode("\\", $tab2);
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -42,23 +41,22 @@
 		<?php echo '<a href="explorer.php?chemin='.$implode.'" class="prec"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>';?>
 		<div class="debut"><?php
 			echo '<a href="explorer.php?chemin='.$vide.'" class="lien">Dossier</a>';
-		?></div>
+		?>
+		</div>
 		<div class="filariane">
 		<?php 
 			foreach ($separe as $key => $separes) {
 				if ($separes == end($separe)) {
 					$vide .= $separes;
-					echo '<a href="explorer.php?chemin='.$vide.$slash.'" class="lien">'.$separes.'</a>';
+					echo '<a href="explorer.php?chemin='.$vide.$slash.'" class="lien">'.' '.$separes.'</a>';
 				}
 				else{
 				 	$vide .= $separes.$slash; 
-					echo '<a href="explorer.php?chemin='.$vide.$slash.'" class="lien">'.$separes.' '.'&#8594</a>';
+					echo '<a href="explorer.php?chemin='.$vide.$slash.'" class="lien">'.' '.$separes.' '.'/</a>';
 				}	
 			}
 		?>
 	</header>
-	<article class="navigateur">
-	<article class="listeverticale"></article>
 	<article class="fichier">
 	<?php
 
@@ -73,15 +71,28 @@
 			
 			if($fichier != '.' && $fichier != '..' && $fichier !='.git' && $fichier != 'explorer.php'){ 
 				if (is_dir($chemin.$fichier)) {
-					echo "<p><i class='fa fa-folder' aria-hidden='true'></i> <a href='".$url_dossier."?chemin=".$cheminAEnvoyer.$fichier."' class='dossiers'>".$fichier."</a></p>";
+					echo "<p class='jaune'><i class='fa fa-folder' aria-hidden='true' ></i> <a href='".$url_dossier."?chemin=".$cheminAEnvoyer.$fichier."' class='dossiers'>".$fichier."</a></p>";
 				}
 				else if (is_file($chemin.$fichier)) {
-					echo "<p><i class='fa fa-file' aria-hidden='true'></i> <a target='_blank' href='".$url_fichier.$slash.$cheminAEnvoyer.$fichier."' class='dossiers'>".$fichier."	</a></p>";
+
+					$info = new SplFileInfo($chemin.$fichier);
+					if($info -> getextension() == 'jpg' || $info -> getextension() == 'png' || $info -> getextension() == 'jpeg'){
+						echo "<p class='image'><i class='fa fa-picture-o' aria-hidden='true'></i> <a target='_blank' href='".$url_fichier.$slash.$cheminAEnvoyer.$fichier."' class='dossiers'>".$fichier."</a></p>";
+					}
+					else if($info -> getextension() == 'css'){
+						echo "<p class='css'><i class='fa fa-css3' aria-hidden='true' ></i> <a target='_blank' href='".$url_fichier.$slash.$cheminAEnvoyer.$fichier."' class='dossiers'>".$fichier."</a></p>";
+						
+					}
+					else if($info -> getextension() == 'html'){
+						echo "<p class='orange'><i class='fa fa-html5' aria-hidden='true'></i> <a target='_blank' href='".$url_fichier.$slash.$cheminAEnvoyer.$fichier."' class='dossiers'>".$fichier."</a></p>";
+					}
+					else{
+						echo "<p><i class='fa fa-file' aria-hidden='true' ></i> <a target='_blank' href='".$url_fichier.$slash.$cheminAEnvoyer.$fichier."' class='dossiers'>".$fichier."</a></p>";
+					}
 				}
 			}
 		}
 	?>
-	</article>
 	</article>
 	</article>
 </body>
