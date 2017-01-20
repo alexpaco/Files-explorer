@@ -31,7 +31,7 @@ header{
 
 .lien{
 	text-decoration: none;
-	color: red;
+	color: #40E0D0;
 }
 
 .debut{
@@ -39,6 +39,7 @@ header{
 	margin-left: 5%;
 	height: 20px;
 	background-color: white;
+	border: 1px solid #40E0D0;
 }
 
 .filariane{
@@ -47,6 +48,7 @@ header{
 	margin-left: 0.5%;
 	height: 20px;
 	background-color: white;
+	border: 1px solid #40E0D0;
 	
 
 }
